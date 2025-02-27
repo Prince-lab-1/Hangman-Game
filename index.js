@@ -12,7 +12,11 @@ function starting() {
     let keys = ['q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m','w'];
 
 
-    let words = ['brick','orange','snow','usa'];
+    let words = ['brick','orange','snow','usa',"apple", "brick", "cloud", "dance", "eagle", "flame", "grape", "house", "igloo", "joker",
+  "kite", "lemon", "mirror", "notebook", "orange", "pencil", "queen", "rocket", "snow", "tiger",
+  "umbrella", "violin", "whistle", "xylophone", "yogurt", "zebra", "beach", "candle", "dragon", "engine",
+  "forest", "guitar", "helmet", "island", "jungle", "king", "lantern", "mountain", "necklace", "ocean",
+  "pirate", "quilt", "rainbow", "sunset", "treasure", "unicorn", "volcano", "window", "yacht", "zombie"];
 
 
 
@@ -20,7 +24,56 @@ function starting() {
 
 let words_length = words.length;
 
-let word_description = ['something hard that is used to build','a fruit simillar to lemon its is commonly yellow ','a hard white substance that occur in strong cold','strong country in northern america'];
+let word_description = ['something hard that is used to build','a fruit simillar to lemon its is commonly yellow ','a hard white substance that occur in strong cold','strong country in northern america',"A red or green fruit",
+  "A small, hard block used for building",
+  "A white fluffy thing in the sky",
+  "A way to move to music",
+  "A large bird with sharp eyes",
+  "The bright, hot part of a fire",
+  "A small round fruit, often purple or green",
+  "A place where people live",
+  "A house made of ice",
+  "A person who loves to make jokes",
+  "A toy that flies in the wind",
+  "A sour yellow fruit",
+  "A glass that reflects your image",
+  "A book for writing notes",
+  "A round, juicy fruit and a color",
+  "A tool used for writing",
+  "A female ruler of a kingdom",
+  "A vehicle that flies into space",
+  "White frozen water that falls in winter",
+  "A big wild cat with orange and black stripes",
+  "Used to stay dry in the rain",
+  "A small musical instrument with strings",
+  "A sound made by blowing air",
+  "A musical instrument with wooden bars",
+  "A creamy dairy food",
+  "A black-and-white striped animal",
+  "A sandy place near the ocean",
+  "A stick of wax that gives light",
+  "A mythical fire-breathing creature",
+  "A machine that makes things move",
+  "A large area filled with trees",
+  "A musical instrument with strings",
+  "A hard hat that protects your head",
+  "A piece of land surrounded by water",
+  "A thick forest with many plants and animals",
+  "A male ruler of a kingdom",
+  "A light inside a case, often used outside",
+  "A very tall landform",
+  "A piece of jewelry worn around the neck",
+  "A large body of saltwater",
+  "A person who sails and steals from ships",
+  "A thick, warm blanket made of stitched fabric",
+  "A colorful arc in the sky after rain",
+  "The time when the sun goes down",
+  "Valuable things like gold or gems",
+  "A magical horse with a single horn",
+  "A mountain that can erupt with lava",
+  "An opening in a wall to let in light",
+  "A fancy boat used for fun",
+  "A walking dead creature in horror stories"];
 
 
 
