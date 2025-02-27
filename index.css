@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color: black;
+    /* : all 2s ease; */
+}
+.keyboard{
+    position: relative;
+    top: 50vh;
+    left: 10vh;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(9, 46, 14);
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    
+    padding: 4vh;
+    gap: 2vh;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.keyboard button{
+    position: ab;
+    font-size: 5vh;
+    text-transform: capitalize;
+    height: 10vh;
+    width: 9vh;
+    border-radius: 2vh;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.keyboard button:hover{
+    font-size: 7vh;
+
+    
+}
+.keyboard button:disabled{
+    cursor: not-allowed;
+}
+.hint{
+   
+    position: absolute;
+    color: white;
+    font-size: 5vh;
+    width: 105vh;
+    top: 30vh;
+    left: 10vh;
+    text-transform: capitalize;
+
+}
+.word{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+    top: 10vh;
+    left: 10vh;
+ 
+    
+    
+}
+.word h1{
+    position: relative;
+    text-transform: capitalize;
+    font-size: 7vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 10vh;
+    width: 10vh;
+    background-color: rgb(9, 46, 14);
+}
+
+img{
+    position: relative;
+    top: -40vh;
+    left: 120vh;
+    height: 90vh;
+    width: 70vh;
+}
+
+.won_panel{
+    position: absolute;
+    height: 70vh;
+    width: 130vh;
+    top: 15vh;
+    left: 30vh;
+    background-color: rgb(9, 46, 14);
+    border: solid 2px white;
+    box-shadow: 0px 0px 10px 10px rgb(9, 46, 14);
+    z-index: 1;
+    
+    box-shadow: 0px 0px 100px 100px rgb(9, 46, 14);
+}
+
+.won_panel img{
+    position: absolute;
+    height: 25vh;
+    width: 25vh;
+    top: 20vh;
+    left: 55vh;
+    border-radius: 10px;
+    background: transparent;
+
+}
+
+
+.won_panel h1{
+    position: relative;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    top: 10vh;
+    font-size: 10vh;
+    color: white;
+}
+.close_btn_won{
+    position: absolute;
+    color: white;
+    border: solid 2px white;
+    background: transparent;
+    padding: 1vh;
+    border: none;
+    font-size: 5vh;
+    left: 125vh;
+    transition: all .2s ease;
+
+    
+}
+
+.won_panel .Again{
+    position: relative;
+    top: 48vh;
+    font-size: 5vh;
+    left: 60vh;
+    color: white;
+    border: solid 2px white;
+    background: transparent;
+    padding: 1vh;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.won_panel .Again:hover{
+    padding: 1.5vh;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px;
+}
+
+.close_btn_won:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.lose_panel{
+    position: relative;
+    display: none;
+    position: absolute;
+    height: 70vh;
+    width: 130vh;
+    top: 15vh; 
+    left: 30vh;
+    background-color: rgb(9, 46, 14);
+    border: solid 2px white;
+     box-shadow: 0px 0px 100px 100px rgb(9, 46, 14);
+    z-index: 1;
+    
+}
+
+.lose_panel img{
+    position: absolute;
+    height: 25vh;
+    width: 25vh;
+    top: 20vh;
+    left: 55vh;
+    border-radius: 10px;
+    background: transparent;
+
+}
+
+
+
+
+
+
+
+.lose_panel h1{
+    position: relative;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    top: 2vh;
+    font-size: 10vh;
+    color: white;
+}
+
+.lose_panel h3{
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    top: 45vh;
+    font-size: 3vh;
+    color: white;
+    text-transform: capitalize;
+    left: 50vh;
+}
+.lose_panel button{
+    position: relative;
+    top: 40vh;
+    font-size: 5vh;
+    left: 60vh;
+    color: white;
+    border: solid 2px white;
+    background: transparent;
+    padding: 1vh;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.lose_panel .close_btn{
+    position: relative;
+    top: 0vh;
+    left: 122vh;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    text-align: right;
+    align-content: end;
+    transition: all .2s ease;
+   
+}
+
+.lose_panel .close_btn:hover{
+ color: red;
+ cursor: pointer;    
+}
+
+.lose_panel .Again:hover{
+   padding: 1.5vh;
+   cursor: pointer;
+   box-shadow: 0px 0px 3px 3px;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+
+    <div class="won_panel">
+
+        
+        <button class="close_btn_won" > x</button>
+
+        <h1>YOU WON !!!</h1>
+        <img src="assets/giphy happy.gif" class="won_panel_img" >
+        <button onclick="starting()" class="Again">Again</button>
+    </div>
+
+    <div class="lose_panel">
+
+        <button class="close_btn" > x</button>
+        <h1>YOU LOSE !!!</h1>
+        <img src="assets/giphy sad (3).gif" alt="">
+
+        <h3>the word was : <span class="correct_word"></span></h3>
+        <button onclick="starting()" class="Again">Again</button>
+
+    </div>
+
+    <div class="word">   
+    </div>
+   
+    <div class="hint" id="words_desc"><h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus similique aperiam doloribus laudantium fugit explicabo expedita ratione, at neque nihil.</h2></div> -->
+     <div class="keyboard" id="keyboard"></div>
+
+   
+        <img src="" id="Hangman_img">
+
+    
+
+    <audio src="assets/sounds/success (2).MP3" id="success"></audio>
+    <audio src="assets/sounds/error.mp3" id="error"></audio>
+    <audio src="assets/sounds/victory_sound.mp3" id="victory"></audio>
+    <audio src="assets/sounds/buzzer.mp3" id="buzzer"></audio>
+
+    <script src="index.js"></script>
+</body>
+</html>
