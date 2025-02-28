@@ -5,14 +5,14 @@ function starting() {
     document.querySelector('.word').innerHTML = '';
     document.querySelector('.won_panel').style.display = "none";
     document.querySelector('.lose_panel').style.display = "none";
-    document.querySelector('#Hangman_img').src = "assets/1.png";
+    document.querySelector('#Hangman_img').src = "1.png";
 
 
     
-    let keys = ['q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m','w'];
+    let keys = ['q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m',];
 
 
-    let words = ['brick','orange','snow','usa',"apple", "brick", "cloud", "dance", "eagle", "flame", "grape", "house", "igloo", "joker",
+ let words = ['brick','orange','snow','usa',"apple", "brick", "cloud", "dance", "eagle", "flame", "grape", "house", "igloo", "joker",
   "kite", "lemon", "mirror", "notebook", "orange", "pencil", "queen", "rocket", "snow", "tiger",
   "umbrella", "violin", "whistle", "xylophone", "yogurt", "zebra", "beach", "candle", "dragon", "engine",
   "forest", "guitar", "helmet", "island", "jungle", "king", "lantern", "mountain", "necklace", "ocean",
@@ -107,6 +107,8 @@ function validate() {
         
         
     let h1 = document.createElement('h1');
+    h1.dataset.category = "word";
+    h1.classList.add('word_h1')
     h1.innerHTML = character;
 
     word.appendChild(h1)
@@ -114,9 +116,33 @@ function validate() {
     
     });
 
+    if (new_word.join('') == words_slctd.join('')) {
+        // console.log('yes');
+        
+        checking();
+    }
+
    
 
     // console.log(new_word);
+}
+
+
+
+
+function checking() {
+
+                          
+
+        setTimeout(() => {
+            document.querySelector('#victory').play();
+            document.querySelector('.won_panel').style.display = "block";
+            document.querySelector('.won_panel_img').src='assets/giphy happy.gif';
+        }, 500);
+        // win_score=0;
+
+        
+    
 }
 
 
@@ -127,12 +153,8 @@ function validate() {
 
 
 
-
-
-
-
-
 // console.log(words_slctd);
+// console.log(words_slctd.length);
 
 
 
@@ -141,6 +163,7 @@ let keyboard = document.getElementById('keyboard');
 let miss_score = 0;
 
 let win_score = 0;
+
 
 keys.forEach(button => {
 
@@ -153,24 +176,16 @@ keys.forEach(button => {
 
        guessed_word.push(button);
 
-       console.log(guessed_word);
 
-        if (words_slctd.includes(button)) {
+        if (words_slctd.includes(button) ) {
 
             document.querySelector('#success').play();
 
+            
+
                 win_score++;
 
-            if (win_score == words_slctd.length) {
-
-                setTimeout(() => {
-                    document.querySelector('#victory').play();
-                    document.querySelector('.won_panel').style.display = "block";
-                    document.querySelector('.won_panel_img').src='assets/giphy happy.gif';
-                }, 500);
-
-                
-            }
+        //    checking();
             
         }else{
 
@@ -223,7 +238,7 @@ function change_img() {
 img_count++;
  var img  = document.querySelector('#Hangman_img');
  
- img.src = `/assets/${img_count}.png`;
+ img.src = `${img_count}.png`;
 
 }
 
@@ -239,8 +254,6 @@ document.querySelector('.close_btn_won').addEventListener('click',()=>{
     document.querySelector('.lose_panel').style.display = "none";
 });
 validate();
-
-
 
 }
 
